@@ -1,0 +1,68 @@
+<div class="contact" id="go-to-contact">
+    <div class="middle-circle"></div>
+    <div class="small-circle"></div>
+    <div class="df_fd_r_sb">
+        <div class="df_fd_column">
+            <div class="text-contact">
+                <h1>Contact</h1>
+                <h2>Got a problem to solve?</h2>
+                <p>Contact me through this form, I am interested in hearing from you knowing your ideas and contributing to your projects with my work.</p>
+                <div class="df_fd_row"><h3>Need a Frontend developer?</h3><h5>Contact me!</h5></div>
+            </div>
+            <div class="big-circle-container">
+                <div class="bigcircle">                
+                </div>
+            </div>
+        </div>
+        <form #myForm="ngForm" autocomplete="off" onsubmit="return false;">
+            <div class="df_ai_fend">
+                <div class="input-contact df_fd_column">
+                        <div class="field">
+                        <input type="text" name="inputName" [(ngModel)]="inputName" #nameInput="ngModel" [ngClass]="{ 'label-top': inputName.length > 0 }" (keyup)="checkValidyOfInput()"
+                            pattern="^[a-zA-ZöüäÖÜÄ0-9\s\W]{3,30}$" required/>
+                        <label title="Your name"></label>
+                        <img class="size-status" [ngClass]="{'d-none': nameInput.invalid}" src="../../../assets/desktop/done.png">
+                        <img class="size-status d-none" id="error-name-icon" src="../../../assets/desktop/error.png">
+                        <div class="required-name d-none" id="required-name">Your name is required</div>
+                        <div class="input-bottom-distance"></div>
+                    </div>
+                    <div class="field">
+                        <input type="email" name="inputEmail" [(ngModel)]="inputEmail" #emailInput="ngModel" [ngClass]="{ 'label-top': inputEmail.length > 0 }" (keyup)="checkValidyOfInput()"
+                            pattern="^[a-zA-Z0-9äöüÄÖÜ]+@[^ ]+\.[a-z]{2,6}$" required/>
+                        <label title="Your email"></label>
+                        <img class="size-status" [ngClass]="{'d-none': emailInput.invalid}" src="../../../assets/desktop/done.png">
+                        <img class="size-status d-none" id="error-email-icon" src="../../../assets/desktop/error.png">
+                        <div class="required-email d-none" id="required-email">Your email is required</div>
+                        <div class="input-bottom-distance"></div>
+                    </div>
+                    <div class="areafield">
+                        <textarea rows="9" name="inputMessage" [(ngModel)]="inputMessage" #messageInput="ngModel" [ngClass]="{ 'label-top': inputMessage.length > 0 }" (keyup)="checkValidyOfInput()"
+                            pattern="^[a-zA-Z0-9!@#$%^&*() _+=\-\.\;\:\u00F6\u00E4\u00FC\u00D6\u00C4\u00DC]{1,1000}$" required></textarea>
+                        <label title="Your message"></label>
+                        <img class="size-status" [ngClass]="{'d-none': messageInput.invalid}" src="../../../assets/desktop/done.png">
+                        <img class="size-status d-none" id="error-message-icon" src="../../../assets/desktop/error.png">
+                        <div class="required-message d-none" id="required-message">Your message is required</div>
+                        <div class="input-bottom-distance-textarea"></div>
+                    </div>         
+                    <div class="submit-container df_fd_column">
+                        <div class="df_fd_column">    
+                            <div class="df_fd_row_c">
+                                <input type="checkbox" name="checkBoxPrivacyPolicy" class="checkbox" [ngClass]="{'shadow': isHovered}" 
+                                [(ngModel)]="checkBoxPrivacyPolicy" (change)="checkValidyOfCheckBox()">
+                                <h4>I've read the <a href="" (mouseenter)="onHover()" (mouseleave)="onLeave()">privacy policy</a> and agree to the processing of my data as outlined.</h4>
+                            </div>
+                            <div class="required-privacy-policy d-hidden" id="required-privacy-policy">Please accept the privacy policy</div>
+                        </div>
+                        <div class="df_jc_c">
+                            <button type="submit" id="btn-submit" [ngClass]="{
+                                'btn-say-hello': nameInput.valid && emailInput.valid && messageInput.valid && checkBoxPrivacyPolicy
+                              }" (click)="btnOn();sendEmail()">Say hello ;)
+                            </button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <img class="size-go-up-btn" (click)="scrollToLandingPage($event)" src="../../../assets/desktop/btn-go-up.png" alt="go up icon">
+</div>

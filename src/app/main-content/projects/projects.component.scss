@@ -1,0 +1,199 @@
+.projects {
+    position: relative;
+    padding: 0 0 0 4.813rem;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5.313rem;
+    margin-bottom: 8.563rem;
+}
+
+.circle-container {
+    position: absolute;
+    margin-left: -4.813rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -5;
+}
+
+.reverse-order {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.df_jc_c_ai_fe {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.image-container {
+    position: relative;
+    height: 24.563rem;
+    width: 38.75rem;
+    z-index: 1;
+}
+
+.image-bg {
+    position: absolute;
+    height: 28.75rem;
+    width: 42rem;
+}
+
+img {
+    height: 24.563rem;
+    width: 38.75rem;
+    box-shadow: 5px 5px 15px 0px #00000026;
+    transition: transform 0.3s ease, width 0.5s ease, object-position 1s ease;
+
+    &:hover {
+        transform: translateY(-4.188rem);
+        width: 45rem;
+    }
+}
+
+.df_ai_fend {
+    display: flex;
+    align-items: flex-end;
+}
+
+.project-description {
+    display: flex;
+    align-items: flex-end;    
+    height: 21.188rem;
+    width: 33.5rem;
+    text-align: left;
+}
+
+.reverse-description {
+    text-align: right;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'baloo-regular';
+    font-size: 2.813rem;
+    line-height: 2.813rem;
+    color: #5988FF;
+}
+
+h2 {
+    margin-top: 0.938rem;
+    margin-bottom: 0.938rem;
+    font-family: 'montserrat-regular';
+    font-size: 1.438rem;
+    line-height: 1.725rem;
+    color: #5988FF;
+}
+
+p {
+    margin-bottom: 2.188rem;
+    font-family: 'montserrat-regular';
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: black;
+}
+
+.fd_fstart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-container {
+    height: 4.085rem;
+    width: 19.75rem;
+}
+
+.btn-live-test, .btn-github {
+    height: 3.625rem;
+    width: 8.563rem;
+    border-radius: 0.625rem;
+    padding: 0.938rem 1.25rem;
+    font-family: 'poppins-regular';
+    font-size: 1.438rem;
+    line-height: 1.725rem;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.btn-live-test {
+    color: white;
+    background-color: #5988FF;
+    border: 2px solid #5988FF;
+}
+
+.btn-github {
+    color: #5988FF;
+    background-color: white;
+    border: 2px solid #5988FF;
+}
+
+.df_jc_sb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.df_jc_fend {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.circle-one, .circle-two {
+    position: absolute;
+    z-index: -10;
+    border-radius: 50%;
+    background-image: linear-gradient(to left, #5988FF, #0043F0);
+} 
+
+.circle-one {
+    margin-top: 11.063rem;
+    margin-left: -15.375rem; 
+    height: 24.625rem;
+    width: 24.625rem;
+}
+
+.circle-two {
+    margin-top: 31.5rem;
+    margin-left: 58.876rem;
+    height: 40.75rem;
+    width: 40.75rem;
+}
+
+.circle-three, .circle-four, .circle-five {
+    position: absolute;
+    z-index: -10;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #5988FF, #0043F0);
+}
+
+.circle-three {
+    margin-top: 56.875rem;
+    height: 3.188rem;
+    width: 3.188rem;
+}
+
+.circle-four {
+    margin-top: 84.438rem;
+    margin-left: 1.938rem;
+    height: 14.875rem;
+    width: 14.875rem;
+}
+
+.circle-five {
+    margin-top: 108.875rem;
+    margin-left: 75rem;
+    height: 6.125rem;
+    width: 6.125rem;
+}
+
+.last-project {
+    margin-bottom: 0.938rem;
+}

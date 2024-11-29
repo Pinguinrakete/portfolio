@@ -1,0 +1,14 @@
+<div class="skill-set" id="go-to-skill-set">
+    <h1>Skill set</h1>
+    <div class="skills">
+        <div class="df_wrap">
+            <div *ngFor="let skill of skills; let isLast = last;  let i = index" [ngStyle]="i == 6 ? {'margin-left': '6rem'} : {}" [ngClass]="{'last-skill': isLast}">
+                <section>
+                    <img src="../../../assets/desktop/skill-set/{{ skill.image }}.png" alt="{{ skill.alt }}" (mouseover)="isLast && showImage()" (mouseout)="hideImage()" >   
+                    <p>{{ skill.name }}</p>       
+                </section>
+                    <img *ngIf="isLast" class="overlay" [hidden]="isImageHidden" src="../../../assets/desktop/skill-set/growth_mindset_hover.png" alt="learn React & VUE"> 
+            </div>
+        </div>
+    </div>
+</div>

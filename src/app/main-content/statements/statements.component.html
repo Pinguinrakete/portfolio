@@ -1,0 +1,19 @@
+<div class="statements">
+    <div class="df_column_jc_c">
+        <h1>Need a teamplayer?</h1>
+        <h2>Here what my colleagues said about me</h2>
+    </div>
+    <div class="df_jc_c">
+        <div class="statement-container">
+            <div class="statement-content" *ngFor="let statement of statements; let i = index">
+                <div>
+                    <h3>{{ statements[i].name }}</h3>
+                    <h4>{{ statements[i].project }}</h4>     
+                </div>
+                <div class="content">
+                    <h5>{{ statements[i].content }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

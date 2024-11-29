@@ -1,0 +1,19 @@
+<div class="pos-navbar-container ">
+    <img src="../../../../assets/desktop/logo.svg" alt="logo">
+    <div class="pos-links-container">
+        <div class="df_fd_col_fstart">
+            <a class="navbar-link" href="#" (click)="scrollToWorkTogether($event); activeLink = 'about'">About Me</a>
+            <div class="navbar-underline" [ngClass]="{'hidden': activeLink !== 'about'}"></div>
+        </div>
+        <div class="df_fd_col_fstart">
+            <a class="navbar-link" href="#" (click)="scrollToSkillSet($event); activeLink = 'skills'">Skill set</a>
+            <div class="navbar-underline" [ngClass]="{'hidden': activeLink !== 'skills'}"></div>
+        </div>
+        <div class="df_fd_col_fstart">
+            <a class="navbar-link" href="#" (click)="scrollToMyWork($event); activeLink = 'work'">My work</a>
+            <div class="navbar-underline" [ngClass]="{'hidden': activeLink !== 'work'}"></div>
+        </div>
+    </div>
+</div>
+
+
