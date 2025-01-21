@@ -65,10 +65,7 @@ export class HeaderNavbarComponent {
       const skillSetSection = document.getElementById('go-to-skill-set');
 
       if (skillSetSection) {
-
-        console.log(this.isMobileViewHeight);
         const scrollBlock = this.isMobileViewHeight ? 'start' : 'center';
-
 
         skillSetSection.scrollIntoView({
           behavior: 'smooth',
