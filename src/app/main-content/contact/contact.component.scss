@@ -1,5 +1,4 @@
 .contact {
-    height: 58.75rem;
     padding: 8.75rem 6.75rem 4rem 5.688rem;
     background-image: linear-gradient(to right, #FFFFFF, #EAF0FF);
     position: relative;
@@ -20,19 +19,14 @@
 }
 
 .small-circle {
-    margin-top: 41.2rem;
+    bottom: 4rem;
     margin-left: 83%;
     height: 4.563rem;   
     width: 4.563rem;
     transform: rotate(60deg);
 }
 
-.df_fd_row {
-    display: flex;
-    flex-direction: row;
-}
-
-.df_fd_row_c {
+.df_fd_row_contactme, .df_fd_row_c {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -52,6 +46,7 @@
 .df_jc_c {
     display: flex;
     justify-content: center;
+    height: 3.625rem;
 }
 
 .d-none {
@@ -65,7 +60,7 @@
 
 .text-contact {
     height: 23.125rem;
-    width: 30rem;
+    max-width: 30rem;
 }
 
 .bigcircle {
@@ -79,11 +74,12 @@
 
 .big-circle-container {
     height: 15.438rem;
-    width: 38.563rem;
+    max-width: 38.563rem;
 }
 
 form {
     margin-top: 12.063rem;
+    margin-bottom: 1rem;
 }
 
 .df_ai_fend {
@@ -92,8 +88,7 @@ form {
 }
 
 .input-contact {
-    height: 31.5rem;
-    width: 38.563rem;
+    max-width: 38.563rem;
 }
 
 .required-name, .required-email, .required-message, .required-privacy-policy {
@@ -125,7 +120,7 @@ h1 {
 h2 {
     margin-top: 5.313rem;
     margin-bottom: 2.188rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 h3 {
@@ -161,10 +156,6 @@ a:hover {
 
 .input-bottom-distance-textarea {
     margin-bottom: 1rem;
-}
-
-.submit-container {
-    height: 7.625rem;
 }
 
 .checkbox {

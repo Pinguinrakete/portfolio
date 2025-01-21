@@ -1,6 +1,5 @@
 .footer {
-    width: 100%;
-    height: 18.063rem;
+    position: relative;
     background-image: linear-gradient(135deg, #5988FF 6%, #5988FF 52%, #0043F0 100%);
     padding: 7.563rem 6.25rem 4rem 6.25rem;
 }
@@ -38,6 +37,10 @@ h1 {
 .social-container-footer {
     height: 2.5rem;
     width: 10.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .social-icon-size {
@@ -60,6 +63,7 @@ h2 {
     &:hover {
         cursor: pointer;
         font-weight: 700;
+        
         .legal-notice-underline {
             opacity: 1;
             transform: translateX(50%); 
@@ -78,4 +82,46 @@ h2 {
     opacity: 0;
     transform: translateX(0);
     transition: opacity 1s ease, transform 1s ease;
+}
+
+@media only screen and (max-width: 900px) {
+    .footer {
+        padding: 3.313rem 2.125rem 3.25rem 2.563rem;
+    }
+
+    .df_row_sb_c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .size-logo-icon {
+        margin: 0;
+    }
+
+     h1 {
+        margin-bottom: 0.75rem;
+        margin-top: 0.75rem;
+        font-size: 1rem;
+    }
+
+    h2 {
+        margin-top: 0rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .footer {
+        padding: 3.313rem 2.125rem 3.25rem 2.563rem;
+    }
+
+     h1 {
+        margin-bottom: 0.75rem;
+        margin-top: 0.75rem;
+        font-size: 1rem;
+    }
+
+    h2 {
+        margin-top: 0rem;
+    }
 }

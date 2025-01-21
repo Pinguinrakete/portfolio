@@ -1,43 +1,60 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
+import { PortfolioService } from '../../services/portfolio.service';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.scss'
+  styleUrls: ['./projects.component.scss', './projects-responsive.component.scss']
 })
 export class ProjectsComponent {
 
+  constructor(public portfolioService: PortfolioService) {}
+
+  /* 
+   * An array of project objects, where each object represents a specific project. 
+   * Each project contains details such as its name, technologies used, a brief 
+   * description, image references, and optionally a link to the project.
+   */
   projects = [
     {
         "name": "JOIN",
         "skills": "Angular | TypeScript | HTML | CSS | Firebase",
-        "content": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "contentEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "contentDE": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzern und Kategorien zu.",
         "image": "join-image",
-        "alt": "JOIN Image"
+        "alt": "JOIN Image",
+        "link": "https://github.com/Pinguinrakete/join"
     },
     {
         "name": "Pollo Loco",
         "skills": "JavaScript | HTML | CSS",
-        "content": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "contentEN": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "contentDE": "Jump-and-Run-Spiel, das objektorientiert programmiert wurde. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
         "image": "pollo-loco-image",
-        "alt": "Pollo Loco Image"
+        "alt": "Pollo Loco Image",
+        "link": "https://github.com/Pinguinrakete/el_pollo_loco"
     },
     {
         "name": "DA Bubble",
-        "skills": "Angulatr | TypeScript | HTML | CSS | Firebase",
-        "content": "A very Simple Customer Relationship Management system working with CRUD functionality.",
+        "skills": "Angular | TypeScript | HTML | CSS | Firebase",
+        "contentEN": "A very Simple Customer Relationship Management system working with CRUD functionality.",
+        "contentDE": "Ein sehr einfaches Customer Relationship Management (CRM)-System mit CRUD-Funktionalität.",        
         "image": "simple-crm-image",
-        "alt": "DA Bubble Image"
+        "alt": "DA Bubble Image",
+        "link": "https://chatgpt.com/"
     },
     {
       "name": "Pokédex",
       "skills": "JavaScript | HTML | CSS | Api",
-      "content": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+      "contentEN": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+      "contentDE": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
       "image": "pokedex-image",
-        "alt": " Image"
+      "alt": " Image",
+      "link": "https://github.com/Pinguinrakete/pokedex"
     }
   ]
 }

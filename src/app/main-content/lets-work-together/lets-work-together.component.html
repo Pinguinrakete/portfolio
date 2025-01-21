@@ -4,28 +4,28 @@
     </div>
     <div class="small-circle"></div>
     <div class="pos-container">
-        <div class="title-work-togehter">
+        <div class="title-work-togehter df_jc_c">
             <div class="pos-lets-work">
                 <div class="text-lets-work">
-                    Let's work togehter
-                </div>               
+                    {{ 'text-lets-work-togehter' | translate }}
+                </div>
                 <div class="iam-center">
                     <div class="available-info">
                         <div class="text-i-am">
-                            I am
+                            {{ 'text-i-am' | translate }}
                         </div>
                         <div class="available-icons fd_r_sb">
                             <div class="fd_row location">
                                 <img class="location-web" src="../../../assets/desktop/located.png" alt="Picture location">
-                                <p>located in Recklinghausen</p>
+                                <p>{{ 'text-located' | translate }}</p>
                             </div>
                             <div class="fd_row remote">
                                 <img class="remote-web" src="../../../assets/desktop/remote.png" alt="Picture remote">
-                                <p>open to work remote</p>
+                                <p>{{ 'text-remote' | translate }}</p>
                             </div>
                             <div class="fd_row relocation">
                                 <img class="relocation-web" src="../../../assets/desktop/relocate.png" alt="Picture relocation">
-                                <p>open to relocate</p>
+                                <p>{{ 'text-relocate' | translate }}</p>
                             </div>
                         </div>
                     </div>
@@ -34,12 +34,11 @@
         </div>
         <div class="pos-about-me">
             <div class="about-me">
-                I am a Front-end developer based in Munich, Germany. I enjoy helping designers and companies bring their 
-                ideas into real life. I am looking forward to continuing my developer career with a job in a junior web 
-                developer position. My ability to solve complex problems and my passion for programming make me a valuable 
-                member for your team. <br><br> If you think I`d be a good match for your projects, contact me!
+                {{ 'text-about-me' | translate }}
+                <br><br>
+                {{ 'text-about-me-two' | translate }}
             </div>
-            <button class="btn-send-a-message" (click)="scrollToContact($event)">Send a message</button>
+            <button class="btn-send-a-message" (click)="scrollToContact($event)">{{ 'btn-send-a-message' | translate }}</button>
         </div>
     </div>
 </div>

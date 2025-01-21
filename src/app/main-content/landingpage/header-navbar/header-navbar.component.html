@@ -1,0 +1,48 @@
+<div class="pos-navbar-container">
+    <img src="../../../../assets/desktop/logo.svg" alt="logo">
+    <div class="pos-links-container">
+        <div class="menu-container">
+            <img class="size-menu-icon" (click)="openNavigationMenu()" src="../../../../assets/desktop/menu.png" alt="menu icon">
+        </div>
+        <div class="df_fd_col_fstart">
+            <a class="navbar-link" href="#" (click)="scrollToWorkTogether($event); activeLink = 'about'">{{ 'about-me' | translate }}</a>
+            <div class="navbar-underline" [ngClass]="{'hidden': activeLink !== 'about'}"></div>
+        </div>
+        <div class="df_fd_col_fstart">
+            <a class="navbar-link" href="#" (click)="scrollToSkillSet($event); activeLink = 'skills'">{{ 'skill-set' | translate }}</a>
+            <div class="navbar-underline" [ngClass]="{'hidden': activeLink !== 'skills'}"></div>
+        </div>
+        <div class="df_fd_col_fstart">
+            <a class="navbar-link" href="#" (click)="scrollToMyWork($event); activeLink = 'work'">{{ 'my-work' | translate }}</a>
+            <div class="navbar-underline" [ngClass]="{'hidden': activeLink !== 'work'}"></div>
+        </div>
+        <div class="language">
+            <a href="#" (click)="switchLanguage('de')" [ngClass]="{'selected': this.portfolioService.selectedLanguage === 'de'}">DE</a>
+            <div class="line"></div>
+            <a href="#" (click)="switchLanguage('en')" [ngClass]="{'selected': this.portfolioService.selectedLanguage === 'en'}">EN</a>
+        </div>
+    </div>
+    <div id="dialog" class="overlay-navigation-menu-bg d-none">
+        <div class="overlay-navigation-menu">
+            <div class="pos-navbar-container">
+                <img src="../../../../assets/desktop/logo-blue.png" alt="logo">
+                <div class="menu-container">
+                    <img class="close-menu-icon" (click)="closeNavigationMenu()" src="../../../../assets/desktop/close-icon.png" alt="close-icon">
+                </div>
+            </div>
+            <div class="df_ai_c_jc_c">
+                <div class="fd_c_jc_sb">
+                    <a class="mobile-navbar-link" href="#" (click)="scrollToWorkTogether($event)">{{ 'about-me' | translate }}</a>
+                    <a class="mobile-navbar-link" href="#" (click)="scrollToSkillSet($event)">{{ 'skill-set' | translate }}</a>
+                    <a class="mobile-navbar-link" href="#" (click)="scrollToMyWork($event)">{{ 'my-work' | translate }}</a>
+                    <a class="mobile-navbar-link" href="#" (click)="scrollToContact($event)">{{ 'contact' | translate }}</a>
+                    <div class="mobile-language">
+                        <a href="#" (click)="switchLanguage('de')" [ngClass]="{'selected': this.portfolioService.selectedLanguage === 'de'}">Deu</a>
+                        <div class="line"></div>
+                        <a href="#" (click)="switchLanguage('en')" [ngClass]="{'selected': this.portfolioService.selectedLanguage === 'en'}">Eng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

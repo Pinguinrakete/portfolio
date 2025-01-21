@@ -1,0 +1,396 @@
+.landingpage {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; 
+    background-image: linear-gradient(to bottom, #ffffff, #eaf0ff);
+}
+
+.pos-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.circle-landingpage {
+    position: absolute;
+    width: 55.75rem;
+    height: 55.75rem;
+    border-radius: 50%;
+    margin-top: -4.688rem;
+    margin-left: -12.5rem;
+    background-image: linear-gradient(to right, #5988FF, #0043F0);
+}
+
+.picture-frontend-developer {
+    position: absolute;
+    height: 57.313rem;
+    width: 47.563rem;
+    margin-top: 8.75rem;
+    margin-left: 2rem;
+    padding: 9.375rem 5rem 0 0;
+}
+
+h1, h2 {
+    position: absolute;
+    font-family: 'baloo-regular';
+    color: #5988FF;
+    letter-spacing: -0.156rem;
+}
+
+h1 {
+    font-size: 8rem;
+    height: auto;
+    top: 18.063rem;
+    right: 3.856rem;
+}
+
+h2 {
+    font-size: 7.375rem;
+    height: auto;
+    top: 25.5rem;
+    right: 4.481rem;
+}
+
+h3 {
+    position: absolute;
+    font-family: 'montserrat-regular';
+    color: #5988FF;
+    right: 2.612rem;
+    font-size: 4rem;
+    height: auto;
+    font-weight: 400;
+    top: 15.088rem;
+    letter-spacing: 0.15em;
+}
+
+h4 {
+    position: absolute;
+    font-family: 'montserrat-regular';
+    color: #5988FF;
+    height: 1.75rem;
+    width: 5.938rem;
+    font-size: 1.438rem;
+    font-weight: 500;
+    top: 41rem;
+    margin-left: 68.5%;
+}
+
+.line {
+    position: absolute;
+    height: 20.625rem;
+    width: 0.125rem;
+    top: 43.375rem;
+    margin-left: 71.8%;
+    background-color: #5988FF;
+}
+
+.navbar-social-icon {
+    position: absolute;
+    top: 42.5rem;
+    left: 90.3%;
+    height: 10.625rem;
+    width: 2.5rem;
+}
+
+.icon-container {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+        animation-timing-function: ease-in-out;
+        justify-content: flex-start;
+    }
+}
+
+.pos-social-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 1.563rem;
+}
+
+.size-social-icon {
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+@media only screen and (max-width: 1420px) {
+    h1 {
+        top: 18.563rem;
+        font-size: 7.5rem;
+    }
+
+    h2 {
+        font-size: 6.875rem;
+    }
+
+    h3 {
+        top: 16.088rem;
+        font-size: 3.65rem;
+        right: 3.4rem;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    h1 {
+        top: 19.063rem;
+        font-size: 6.8rem;
+        right: 3.656rem;
+    }
+
+    h2 {
+        font-size: 6.175rem;
+        right: 4.7rem;
+    }
+
+    h3 {
+        top: 16.588rem;
+        font-size: 3.3rem;
+        right: 3.2rem;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .line {
+        margin-left: 60.813rem;
+    }
+
+    h4 {
+        margin-left: 58.219rem;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .picture-frontend-developer {
+        width: 100%;
+        padding: 9.375rem 39rem 0 0;
+    }
+
+    h4 {
+        margin-left: 71.5%;
+    }
+    
+    .line {
+        margin-left: 74.6%;
+    }
+    
+    .circle-landingpage {
+        margin-left: calc(-12.5rem + (100vw - 82.5rem));
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .picture-frontend-developer {
+        padding: 9.375rem 0 0 0;
+        width: 32.5rem;
+    }
+
+    .circle-landingpage {
+        margin-left: -22.5rem;
+    }
+    h1 {
+        top: 19.063rem;
+        font-size: 6.5rem;
+        right: 3.656rem;
+    }
+
+    h2 {
+        top: 25rem;
+        font-size: 5.875rem;
+        right: 4.7rem;
+    }
+
+    h3 {
+        top: 17.088rem;
+        right: 3.7rem;
+        font-size: 3.1rem;
+    }
+}
+
+@media only screen and (max-width: 1135px) {
+    h1 {
+        top: 19.563rem;
+        font-size: 6rem;
+        right: 3.456rem;
+    }
+
+    h2 {
+        font-size: 5.375rem;
+        right: 4.7rem;
+    }
+
+    h3 {
+        top: 17.588rem;
+        right: 3rem;
+        font-size: 2.9rem;
+    }
+
+    .line {
+        margin-left: 75%;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    h1 {
+        top: 19.563rem;
+        font-size: 6rem;
+        right: 1.956rem;
+    }
+
+    h2 {
+        font-size: 5.375rem;
+        right: 3.2rem;
+    }
+
+    h3 {
+        top: 17.588rem;
+        right: 1.5rem;
+        font-size: 2.9rem;
+    }
+
+    .line {
+        margin-left: 75%;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+    h1 {
+        top: 20rem;
+        font-size: 5.5rem;
+        right: 2.156rem;
+    }
+
+    h2 {
+        font-size: 4.875rem;
+        right: 3.7rem;
+    }
+
+    h3 {
+        top: 18rem;
+        right: 2.2rem;
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    h1 {
+        top: 20.25rem;
+        font-size: 5rem;
+        right: 2.156rem;
+    }
+
+    h2 {
+        font-size: 4.375rem;
+        right: 3.7rem;
+    }
+
+    h3 {
+        top: 18.088rem;
+        right: 1.7rem;
+        font-size: 2.4rem;
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    .picture-frontend-developer {
+        margin-left: 0;
+    }
+
+    .circle-landingpage {
+        margin-left: -24.5rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    h1 {
+        top: 20.75rem;
+        font-size: 4.5rem;
+        right: 2.156rem;
+    }
+
+    h2 {
+        top: 25rem;
+        font-size: 3.875rem;
+        right: 3.9rem;
+    }
+
+    h3 {
+        top: 19.088rem;
+        right: 2.25rem;
+        font-size: 2.1rem;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    h4, .navbar-social-icon, .line {
+        display: none;
+    }
+
+    .circle-landingpage {
+        margin-left: -12.5rem;
+    }
+
+    .df_jc_c {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        top: 8.75rem; 
+        font-size: 7.5rem;
+        color: #ffffff;
+        left: 2.5rem;
+    }
+
+    h2 {
+        top: 15rem;
+        font-size: 7rem;
+        color: #ffffff;
+        left: 2.5rem;
+    }
+
+    h3 {
+        top: 7.5rem;
+        right: 3.7rem;
+        color: #ffffff;
+        left: 2.5rem;
+        font-size: 3.1rem;
+    }
+
+    .picture-frontend-developer {
+        margin-top: 14.5rem;
+        padding: 9.375rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .circle-landingpage {
+        margin-left: calc(-12.5rem + (100vw - 46rem));
+    }
+
+    .picture-frontend-developer {
+        padding: 8.875rem 0 0 0;
+    }
+
+    h1 {
+        top: 9.25rem; 
+        font-size: 7rem;
+    }
+
+    h2 {
+        top: 15.5rem;
+        font-size: 6.5rem;
+    }
+
+    h3 {
+        top: 8rem;
+        right: 3.7rem;
+        font-size: 2.95rem;
+    }
+}

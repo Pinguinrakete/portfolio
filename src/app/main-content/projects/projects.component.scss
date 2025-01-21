@@ -1,6 +1,7 @@
 .projects {
     position: relative;
-    padding: 0 0 0 4.813rem;
+    padding: 0 0 0 0;
+    width: 100%;
 }
 
 .project-container {
@@ -8,11 +9,11 @@
     flex-direction: row;
     gap: 5.313rem;
     margin-bottom: 8.563rem;
+    margin-left: 4.813rem;
 }
 
 .circle-container {
     position: absolute;
-    margin-left: -4.813rem;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -119,8 +120,23 @@ p {
     font-family: 'poppins-regular';
     font-size: 1.438rem;
     line-height: 1.725rem;
-    gap: 50px;
     cursor: pointer;
+    background-size: 100% 100%; 
+    background-position: center;
+
+    &:hover {
+        cursor: pointer;
+        animation: btn-animation 0.4s forwards;
+        transform: scale(1.1);
+        transform-origin: center; 
+    }
+
+    @keyframes btn-animation {
+        0% {top: 0px; background-image: url('./../../../assets/desktop/btn-animation-one.png'); color: white; border: 0;}
+        35% {top: 0px; background-image: url('./../../../assets/desktop/btn-animation-one.png'); color: white; border: 0;}
+        75% {top: 0px; background-image: url('./../../../assets/desktop/btn-animation-two.png'); color: white; border: 0;}
+        100% {top: 0px; background-image: url('./../../../assets/desktop/btn-animation-three.png'); color: white; border: 0;}
+    }
 }
 
 .btn-live-test {
@@ -155,14 +171,14 @@ p {
 
 .circle-one {
     margin-top: 11.063rem;
-    margin-left: -15.375rem; 
+    margin-left: -215px;
     height: 24.625rem;
     width: 24.625rem;
 }
 
 .circle-two {
     margin-top: 31.5rem;
-    margin-left: 58.876rem;
+    margin-left: 65%;
     height: 40.75rem;
     width: 40.75rem;
 }
@@ -176,24 +192,41 @@ p {
 
 .circle-three {
     margin-top: 56.875rem;
+    margin-left: 6%;
     height: 3.188rem;
     width: 3.188rem;
 }
 
 .circle-four {
-    margin-top: 84.438rem;
-    margin-left: 1.938rem;
+    margin-top: 85rem;
+    margin-left: 9%;
     height: 14.875rem;
     width: 14.875rem;
 }
 
 .circle-five {
     margin-top: 108.875rem;
-    margin-left: 75rem;
+    margin-left: 89%;
     height: 6.125rem;
     width: 6.125rem;
 }
 
 .last-project {
     margin-bottom: 0.938rem;
+}
+
+@media only screen and (max-width: 1405px) {
+    .image-container, img {
+        width: 35.75rem;
+    }
+
+    .image-bg {
+        width: 39rem;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .projects {
+        padding: 0 0 0 0;
+    }
 }

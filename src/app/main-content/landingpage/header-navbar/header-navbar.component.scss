@@ -1,0 +1,284 @@
+.logo {
+    height: 4.313rem;
+    width: 4rem;
+}
+
+.pos-navbar-container {
+    height: 7.313rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5rem 0 6.25rem;
+}
+
+.menu-container {
+    height: 7.313rem;
+    width: 7.313rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size-menu-icon {
+    height: 1.75rem;
+    width: 1.875rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.pos-links-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3.2rem;
+}
+
+.navbar-link {
+    height: 2rem;
+    width: 8.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'montserrat-regular';
+    font-size: 1.438rem;
+    color: #5988FF;
+
+    &:hover {
+        font-weight: 700;
+    }
+}
+
+.mobile-navbar-link {
+    height: 2rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    font-family: 'montserrat-regular';
+    font-size: 1.75rem;
+    color: #5988FF;
+
+    &:hover {
+        font-weight: 700;
+    }
+}
+
+a {
+    font-size: 1.438rem;
+    font-family: 'montserrat-regular';
+    color: #5988FF;
+
+    &.selected {
+        font-weight: bold;
+    }
+}
+
+.line {
+    height: 1.8rem;
+    width: 3px;
+    background-color: #5988FF;
+}
+
+.language {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    width: 5rem;
+}
+
+.mobile-language {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    width: 8rem;
+}
+
+.df_fd_col_fstart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.navbar-underline {
+    height: 0.188rem;
+    width: 3.469rem;
+    background-color: #0043F0;
+}
+
+.overlay-navigation-menu-bg {
+    z-index: 15;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(100%);
+    animation: slideIn 0.3s ease-out forwards;
+
+    &.slide-out {
+        animation: slideOut 0.3s ease-in forwards;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.df_ai_c_jc_c {
+    height: calc(100% - 7.313rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fd_c_jc_sb {
+    height: 14rem;
+    width: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overlay-navigation-menu {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.close-menu-icon {
+    height: 1.75rem;
+    width: 1.875rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+@media only screen and (max-width: 1420px) {
+    .pos-links-container {
+        gap: 2.25rem;
+    }
+}
+
+
+@media only screen and (max-width: 1160px) {
+    .pos-navbar-container {
+        padding: 0 4rem 0 6.25rem;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .pos-navbar-container {
+        padding: 0 3rem 0 6.25rem;
+    }
+
+    .pos-links-container {
+        gap: 1.75rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .pos-navbar-container {
+        padding: 0 2rem 0 6.25rem;
+    }
+
+    .pos-links-container {
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .pos-navbar-container {
+        padding: 0 1.563rem 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .pos-links-container {
+        gap: 0.5rem;
+    }
+
+    .navbar-link {
+        width: 7.5rem;
+        font-size: 1.25rem;
+    }
+
+    a {
+        font-size: 1.25rem;
+    }
+
+    .line {
+        height: 1.4rem;
+    }
+
+    .language {
+        height: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 911px) {
+    .menu-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .pos-navbar-container {
+        padding: 0 0 0 2.5rem;
+    }
+
+    .df_fd_col_fstart, .language {
+        display: none;
+    }
+
+    .mobile-language {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        font-size: 1.75rem;
+    }
+
+    .line {
+        height: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .pos-navbar-container {
+        padding: 0 0 0 1.563rem;
+    }
+
+    .menu-container {
+        width: 6rem;
+    }
+}

@@ -1,6 +1,10 @@
 .skill-set {
-    height: 39.5rem;
     background-image: linear-gradient(135deg, #5988FF 6%, #5988FF 52%, #0043F0 100%);
+}
+
+.skills {
+    width: 100%;
+    padding: 0 12rem 5.25rem 13.25rem;
 }
 
 h1 {
@@ -13,16 +17,36 @@ h1 {
     color: white;
 }
 
-.skills {
-    height: 26.5rem;
-    width: 90rem;
-    padding: 0 12rem 5.25rem 13.25rem;
+p {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
 }
 
 .df_wrap {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.875rem 6.5rem;
+    row-gap: 1.875rem;
+}
+
+.df_jc_sb {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.even-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 4rem;
+}
+
+.clear {
+    flex-basis: 100%;
+    height: 0;
 }
 
 section {
@@ -56,14 +80,10 @@ img {
     filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.25));
 }
 
-p {
-    font-size: 1rem;
-    text-align: center;
-    color: white;
-}
-
 .overlay {
     position: absolute;
+    margin-bottom: 2.5rem;
+    margin-left: 7.5rem;
     width: 12.406rem;
     height: 11.063rem;
     opacity: 1;  
@@ -84,12 +104,79 @@ p {
         img {
             position: relative;
             transform: translateY(0);
-
         }
 
         p {
             font-weight: 400;
             filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
         }
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    h1 {
+        line-height: 5rem;
+        padding: 4rem 0 0 0;
+        font-size: 5rem;
+    }
+
+    .skills {
+        padding: 0 8rem 5.25rem 9.25rem;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    .skills {
+    padding: 0 4rem 5.25rem 5.25rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    h1 {
+        padding: 4rem 0 0 0;
+        font-size: 4.5rem;
+    }
+    
+    .skills {
+    padding: 0 2rem 5.25rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .df_jc_sb, .even-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        padding: 0; 
+    }
+
+    section {
+        width: 8.375rem;
+        padding: 0 1.25rem;
+    }
+
+    .skills {
+        padding: 0 1.563rem 3.5rem 1.563rem;
+    }
+
+    .df_wrap {
+        row-gap: 0rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .skills {
+        padding: 0 0 3.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        font-size: 4rem;
     }
 }

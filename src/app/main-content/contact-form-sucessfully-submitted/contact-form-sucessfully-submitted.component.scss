@@ -1,0 +1,114 @@
+.overlay {
+    position: fixed;
+    padding: 4rem 6.75rem 4rem 5.85rem;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+  
+.popup {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    height: 3.625rem;
+    width: 9.563rem;
+    border-radius: 0.625rem;
+    padding: 0.938rem 1.25rem;
+    font-family: 'poppins-regular';
+    font-size: 1.438rem;
+    line-height: 1.725rem;
+    color: #5988FF;
+    background-color: white;
+    border: 2px solid #5988FF;
+    background-size: 100% 100%; 
+    background-position: center;
+
+    &:hover {
+        cursor: pointer;
+        animation: btn-animation 0.4s forwards;
+        transform: scale(1.1);
+        transform-origin: center; 
+    }
+
+    @keyframes btn-animation {
+        0% {top: 0px; background-image: url('./../../../assets/desktop/btn-animation-one.png'); color: white; border: 0;}
+        35% {top: 0px; background-image: url('./../../../assets/desktop/btn-animation-one.png'); color: white; border: 0;}
+        75% {top: 0px; background-image: url('./../../../assets/desktop/btn-animation-two.png'); color: white; border: 0;}
+        100% {top: 0px; background-image: url('./../../../assets/desktop/btn-animation-three.png'); color: white; border: 0;}
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        height: 3.3rem;
+        width: 7rem;
+        font-size: 1.25rem;
+        line-height: 1.438rem;
+    }
+
+    .popup {
+        padding: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .overlay {
+        padding: 4rem 5.25rem 4rem 4.25rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .overlay {
+        padding: 4rem 4.35rem 4rem 3.35rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    h2 {
+        font-size: 1.125rem;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .overlay {
+        padding: 4rem 3.35rem 4rem 2.35rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .overlay {
+        padding: 4rem 2.35rem 4rem 1.35rem;
+    }
+}
+
+@media only screen and (max-width: 295px) {
+    .overlay {
+        padding: 4rem 1.85rem 4rem 0.85rem;
+    }
+}

@@ -1,0 +1,321 @@
+@media only screen and (max-width: 700px) {
+    .picture-frontend-developer {
+        padding: 8.375rem 0 0 0;
+    }
+
+    h1 {
+        top: 9.75rem; 
+        font-size: 6.5rem;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    h3 {
+        top: 8.5rem;
+        font-size: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .picture-frontend-developer {
+        padding: 7.5rem 0 0 0;
+    }
+
+    h1 {
+        top: 10.25rem; 
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 5.5rem;
+    }
+
+    h3 {
+        top: 9rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    h1 {
+        top: 10.25rem; 
+        font-size: 5.5rem;
+    }
+
+    h2 {
+        top: 15rem;
+        font-size: 5rem;
+    }
+
+    h3 {
+        top: 9rem;
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    h1 {
+        width: 100%;
+        padding: 0 1.563rem 0 1.563rem;
+        left: 0rem;
+    }
+
+    h2 {
+        width: 100%;
+        padding: 0 1.563rem 0 1.563rem;
+        left: 0rem;
+    }
+
+    h3 {
+        width: 100%;
+        padding: 0 1.563rem 0 1.563rem;
+        left: 0rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .picture-frontend-developer {
+        width: 100%;
+    }
+
+    h1 {
+        top: 11rem; 
+        font-size: 5rem;
+    }
+
+    h2 {
+        top: 15.2rem;
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        top: 10rem;
+        font-size: 2.05rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .picture-frontend-developer {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 1.85rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .picture-frontend-developer {
+        width: 420px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        top: 14.3rem;
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 1.65rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .picture-frontend-developer {
+        width: 100%;
+    }
+
+    h1 {
+        top: 11rem; 
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        top: 15.2rem;
+        font-size: 3rem;
+    }
+
+    h3 {
+        top: 10rem;
+        font-size: 1.35rem;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    h2 {
+        font-size: 2.85rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 0.95rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 1370px) {
+    .landingpage {
+        max-height: 1024px;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 1280px) {
+    .landingpage {
+        max-height: 100vh;
+    }
+
+    .picture-frontend-developer {
+        height: 65rem;
+        margin-top: 15rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 1140px) {
+    .picture-frontend-developer {
+        height: 56rem;
+        margin-top: 16rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 1024px) {
+    .picture-frontend-developer {
+        height: 50rem;
+        margin-top: 14rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 900px) {
+    .picture-frontend-developer {
+        height: 44rem;
+        margin-top: 12rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 825px) {
+    .picture-frontend-developer {
+        height: 42rem;
+        margin-top: 11rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 740px) {
+    .picture-frontend-developer {
+        height: 36rem;
+    }
+
+    .landingpage {
+        height: 100vh;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 640px) {
+    .picture-frontend-developer {
+        margin-top: 7rem;
+    }
+
+    h1 {
+        top: 8rem; 
+    }
+
+    h2 {
+        top: 11.5rem;
+    }
+    h3 {
+        top: 7rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 570px) {
+    .picture-frontend-developer {
+        height: 29rem;
+        margin-top: 7rem;
+    }
+    
+    h1 {
+        top: 9rem; 
+    }
+
+    h2 {
+        top: 11.5rem;
+    }
+
+    h3 {
+        top: 8rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 535px) {
+    .picture-frontend-developer {
+        height: 28rem;
+        margin-top: 7rem;
+    }
+    
+    h1 {
+        top: 9rem; 
+    }
+
+    h2 {
+        top: 12rem;
+    }
+
+    h3 {
+        top: 8rem;
+    }
+}

@@ -21,7 +21,7 @@
 .small-circle {    
     position: absolute;
     margin-top: 2rem;
-    margin-left: 72%;
+    margin-left: 75%;
     height: 5.125rem;
     width: 5.125rem;
     border-radius: 50%;
@@ -60,7 +60,7 @@
 
 .available-info {
     height: 8rem;
-    width: 36.313rem;
+    max-width: 36.313rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -77,6 +77,11 @@
 .fd_r_sb {
     display: flex;
     justify-content: space-between;
+}
+
+.df_jc_c {
+    display: flex;
+    justify-content: center;
 }
 
 p {
@@ -125,13 +130,8 @@ p {
     width: 2.5rem;
 }
 
-.available-icons {
-    height: 3.188rem;
-    width: 100%;
-}
-
 .title-work-togehter {
-    width: 37.875rem;
+    max-width: 37.875rem;
     word-wrap: break-word;
     display: flex;
 }
@@ -140,13 +140,11 @@ p {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    height: 27.5rem;
 }
 
 .about-me {
     font-family: 'montserrat-regular';
-    width: 35.688rem;
-    height: 20rem;
+    max-width: 33.688rem;
     word-wrap: break-word;
     font-size: 1.438rem;
     margin-bottom: 2.5rem;

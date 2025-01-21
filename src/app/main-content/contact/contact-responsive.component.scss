@@ -1,0 +1,190 @@
+@media only screen and (max-width: 1375px) {
+    .df_fd_r_sb {
+        gap: 3.5rem;
+    }
+
+    form {
+        min-width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) { 
+    .contact {
+        padding: 8.75rem 3.688rem 4rem 3.688rem;
+    }
+}
+
+@media only screen and (max-width: 1135px) {
+    .df_fd_r_sb {
+        gap: 2rem;
+    }   
+    
+    .text-contact {
+        max-width: 30rem;
+    }
+
+    form {
+        max-width: 29rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .df_fd_r_sb {
+        gap: 1rem;
+    }   
+    form {
+        max-width: 28rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .contact {
+        padding: 12rem 3.688rem 2.5rem 3.688rem;
+      }
+
+    .df_fd_r_sb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .df_ai_fend {
+        margin-bottom: 0;
+    }
+
+    form {
+        margin-top: 0;
+        max-width: 30rem;
+        margin-bottom: 5rem;
+    }
+
+    .text-contact {
+        height: 100%;
+        margin-bottom: 2.188rem;
+    }
+
+    h2 {
+        margin-top: 3.313rem;
+    }
+
+    h3, h5 {
+        margin-bottom: 0;
+    }
+
+    p {
+        white-space: wrap;
+    }
+
+    .big-circle-container {
+        display: none;
+    }
+
+    .middle-circle {
+        margin-top: -9rem;
+        margin-left: 58%;
+    }
+
+    .small-circle {
+        margin-left: 63%;        
+        margin-bottom: 1rem;
+    }      
+}
+
+@media only screen and (max-width: 620px) {
+    .middle-circle {
+        margin-top: -8rem;
+        margin-right: 1.5rem;
+    }
+
+    p {
+        white-space: wrap;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .text-contact, .df_fd_row_contactme {
+        width: 100%;
+    }
+
+    .df_ai_fend {
+        justify-content: center;
+        width: 100%;
+    }
+
+    form, .input-contact {
+        min-width: 10rem;
+    }
+
+    h3, h5 {
+        white-space: nowrap;
+    }
+
+    .middle-circle {
+        right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .df_fd_row_contactme {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 2.813rem;
+        line-height: 2.813rem;
+    }
+    
+    h2 {
+        font-size: 1.438rem;
+        margin-top: 2.188rem;
+    }
+
+    .middle-circle {
+        margin-top: -7.75rem;
+        height: 7rem;   
+        width: 7rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .small-circle {
+        bottom: 4.5rem;
+        right: 2rem;
+        height: 3.563rem;   
+        width: 3.563rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .middle-circle {
+        margin-top: -7.75rem;
+        height: 6rem;   
+        width: 6rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .middle-circle {
+        margin-top: -6rem;
+        height: 5rem;   
+        width: 5rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    h3 {
+        white-space: pre-line;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .text-contact {
+        width: 100%;
+    }
+}

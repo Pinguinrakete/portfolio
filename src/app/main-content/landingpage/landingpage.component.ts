@@ -7,17 +7,22 @@ import { ProjectsComponent } from '../projects/projects.component';
 import { StatementsComponent } from '../statements/statements.component';
 import { ContactComponent } from '../contact/contact.component';
 import { FooterComponent } from '../../shared/footer/footer.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 SkillSetComponent
 @Component({
-  selector: 'app-landingpape',
+  selector: 'app-landingpage',
   standalone: true,
-  imports: [HeaderNavbarComponent, LetsWorkTogetherComponent, SkillSetComponent, MyWorkComponent, ProjectsComponent, StatementsComponent, ContactComponent, FooterComponent],
-  templateUrl: './landingpape.component.html',
-  styleUrl: './landingpape.component.scss'
+  imports: [HeaderNavbarComponent, LetsWorkTogetherComponent, SkillSetComponent, MyWorkComponent, ProjectsComponent, StatementsComponent, ContactComponent, FooterComponent, TranslateModule],
+  templateUrl: './landingpage.component.html',
+  styleUrls: ['./landingpage.component.scss','./landingpage-responsive.component.scss']
 })
-export class LandingpapeComponent {
+export class LandingpageComponent {
 
+  /*
+   * This method is triggered when a user interacts with an element (such as a button) 
+   * to scroll smoothly to the contact section of the landing page.
+   */
   scrollToContact(event: Event) {
     event.preventDefault();
     const contactSection = document.getElementById('go-to-contact');

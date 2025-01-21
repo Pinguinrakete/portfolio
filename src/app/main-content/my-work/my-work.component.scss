@@ -26,8 +26,8 @@ p {
 
 .small-circle {
     position: absolute;
-    margin-top: -4.625rem;
-    margin-left: 37.5%;
+    margin-top: -5.625rem;
+    margin-left: 30.5rem;
     height: 6.797rem;
     width: 6.797rem;
     border-radius: 50%;
@@ -42,4 +42,258 @@ p {
     width: 11.438rem;
     border-radius: 50%;
     background-image: linear-gradient(to right, #5988FF, #0043F0);
+}
+
+@media only screen and (max-width: 1405px) {
+    .small-circle {
+        margin-left: 27.5rem;
+    }
+
+    .my-work-container {
+        width: 36rem;
+    }
+}
+
+@media only screen and (max-width: 1355px) {
+    .small-circle {
+        margin-left: 26rem;
+    }
+
+    .my-work-container {
+        width: 32.75rem;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    .small-circle {
+        margin-left: 23rem;
+        height: 6rem;
+        width: 6rem;
+    }
+
+    P {
+        font-size: 1.25rem;      
+    }
+
+    .my-work-container {
+        width: 29.75rem;
+    }
+
+    .my-work-container {
+        height: 14.25rem;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .small-circle {
+        margin-left: 21rem;
+    }
+}
+
+@media only screen and (max-width: 1135px) {
+    P {
+        font-size: 1.125rem;      
+    }
+
+    .my-work-container {
+        width: 26.75rem;
+    }
+
+    .my-work-container {
+        height: 14rem;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .my-work-container  {
+        margin-left: 4rem;
+    }
+
+    .small-circle {
+        margin-left: 30.5rem;
+        height: 6.797rem;
+        width: 6.797rem;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .my-work-container  {
+        margin-left: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .my-work {
+        display: flex;
+        justify-content: center;
+        margin-top: 16rem;
+    }
+
+    .my-work-container {
+        margin-left: 0;
+        width: 38.75rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-circle {
+        z-index: -5;
+        margin-top: -5.625rem;
+    }
+
+    .big-circle {
+        margin-top: -14rem;
+        margin-left: -25rem;
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .my-work {
+        padding: 0 32px;
+    }
+
+    .small-circle {
+        right: 4rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .big-circle {
+        left: 29rem;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .small-circle {
+        margin-top: -5rem;
+        right: 2.5rem;
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .big-circle {
+        margin-top: -13.25rem;
+        left: 29.75rem;
+        height: 8.5rem;
+        width: 8.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .small-circle {
+        margin-top: -3rem;
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .small-circle {
+        right: 2rem;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .my-work {
+        padding: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .my-work {
+        margin-top: 14rem;
+    }
+
+    .big-circle {
+        margin-top: -12.25rem;
+        left: 28.75rem;
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+
+    .small-circle {
+        right: 1rem;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .my-work {
+        margin-top: 12rem;
+    }
+
+    .big-circle {
+        margin-top: -9.75rem;
+        left: 29.25rem;
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .small-circle {
+        right: 1rem;
+        margin-top: -2rem;
+        height: 2.813rem;
+        width: 2.813rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .my-work-container {
+        height: 12.5rem;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .small-circle {
+        margin-right: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .my-work {
+        margin-top: 9rem;
+    }
+
+    .big-circle {
+        margin-top: -7.5rem;
+        left: 28rem;
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .big-circle {
+        margin-top: -7.3rem;
+        left: 28.1rem;
+        height: 4.375rem;
+        width: 4.375rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
 }

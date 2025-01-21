@@ -1,0 +1,400 @@
+@media only screen and (max-width: 1355px) {
+    .image-container, img {
+        width: 32.75rem;
+    }
+
+    .image-bg {
+        width: 36rem;
+    }
+}
+
+@media only screen and (max-width: 1315px) {
+    .project-container {
+        gap: 5rem;
+        margin-bottom: 7.563rem;
+    }
+
+    .project-description {
+        width: 32rem;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .image-container {
+        width: 29.75rem;
+    }
+
+    .image-bg {
+        width: 33rem;
+    }    
+
+    img {
+        width: 29.75rem;
+
+        &:hover {
+            width: 36rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1235px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .project-description {
+        width: 30.5rem;
+    }
+
+    img {
+        width: 29.75rem;
+
+        &:hover {
+            width: 34rem;
+        }
+    }
+
+    .project-container {
+        gap: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .project-description {
+        width: 29rem;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .project-description {
+        width: 28rem;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .image-container {
+        width: 28.25rem;
+    }
+
+    .image-bg {
+        width: 31.5rem;
+    }    
+
+    img {
+        width: 28.25rem;
+
+        &:hover {
+            width: 33rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1135px) {
+    .image-container {
+        height: 22.563rem;
+        width: 26.75rem;
+    }
+
+    .image-bg {
+        height: 26.75rem;
+        width: 30rem;
+    }    
+
+    img {
+        height: 22.563rem;
+        width: 26.75rem;
+
+        &:hover {
+            width: 30rem;
+        }
+    }
+
+    .project-container {
+        gap: 3rem;
+    }
+
+    .circle-four {
+        margin-top: 80rem;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .project-container {
+        margin-left: 4rem;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .project-container {
+        margin-left: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {   
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-top: 1.75rem;
+        margin-left: 0rem;
+    }
+
+    .image-container {
+        height: 24.563rem;
+        width: 38.75rem;
+    }
+
+    .image-bg {
+        height: 28.75rem;
+        width: 42rem;
+    }
+
+    img {
+        height: 24.563rem;
+        width: 38.75rem;
+    
+        &:hover {
+            width: 45rem;
+        }
+    }
+
+    .project-content {
+        align-items: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .project-description {
+        width: 35rem;
+    }
+
+    h2 {
+        font-size: 1.438rem;
+    }
+
+    .circle-five {
+        margin-left: calc(100% - 7rem);
+    }
+
+    .circle-one {
+        margin-top: 5rem;
+    }
+
+    .circle-four {
+        margin-top: 119.5rem;
+        margin-left: 17%;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .circle-four {
+        margin-left: 15%;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .circle-four {
+        margin-left: 13%;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .circle-four {
+        margin-left: 11%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .image-bg {
+        width: 100%;
+    }
+
+    .circle-five {
+        margin-left: calc(100% - 7rem);
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .circle-four {
+        margin-left: 8%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .circle-four {
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .circle-four {
+        margin-top: 119.5rem;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .image-container {
+        width: 100%;
+    }
+
+    img {
+        width: 36rem;
+    
+        &:hover {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    img {
+        width: 33rem;
+    }
+
+    .project-content {
+        width: 35rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .image-container, .project-description {
+        width: 100%;
+    }
+
+    img {
+        width: 31rem;
+    }
+
+    .project-content {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+}
+    
+@media only screen and (max-width: 550px) {
+    img {
+        width: 29.5rem;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    img {
+        width: 28rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    img {
+        width: 26.5rem;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    img {
+        height: 23.063rem; 
+        width: 25rem;
+    }
+    
+    h2 {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    .project-container {
+        gap: 0rem;
+        margin-bottom: 6rem;
+    }
+
+    .circle-four {
+        margin-top: 115rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    img {
+        width: 23.5rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    img {
+        width: 22rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .image-container, .image-bg {
+        margin-top: -1rem;
+        height: 23rem;
+    }
+
+    img {
+        height: 19.5rem;
+        width: 20.5rem;
+    }
+
+    .project-container {
+        margin-bottom: 5rem;
+    }
+
+    .circle-one {
+        margin-top: 6rem;
+        margin-left: -215px;
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .circle-four {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .btn-container {
+        width: 100%;
+        gap: 1.5rem;
+     }
+}
+
+@media only screen and (max-width: 365px) {
+    img {
+        width: 19rem;
+    }
+
+    .btn-live-test, .btn-github {
+        height: 3.625rem;
+        width: 7.563rem;
+        padding: 0.938rem 0.75rem; 
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .project-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    img {
+        width: 17.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn-container {
+        gap: 1rem;
+    }
+}

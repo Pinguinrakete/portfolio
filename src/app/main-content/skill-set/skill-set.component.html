@@ -1,14 +1,15 @@
 <div class="skill-set" id="go-to-skill-set">
     <h1>Skill set</h1>
     <div class="skills">
-        <div class="df_wrap">
-            <div *ngFor="let skill of skills; let isLast = last;  let i = index" [ngStyle]="i == 6 ? {'margin-left': '6rem'} : {}" [ngClass]="{'last-skill': isLast}">
-                <section>
-                    <img src="../../../assets/desktop/skill-set/{{ skill.image }}.png" alt="{{ skill.alt }}" (mouseover)="isLast && showImage()" (mouseout)="hideImage()" >   
-                    <p>{{ skill.name }}</p>       
+        <div class="df_wrap">      
+            <div *ngFor="let chunk of chunkedSkills; let i = index" [ngClass]="i % 2 === 0 ? 'df_jc_sb' : 'even-row'">
+                <section *ngFor="let skill of chunk" (mouseover)="skill.name == 'Growth mindset' && showImage()" (mouseout)="hideImage()">
+                    <img src="../../../assets/desktop/skill-set/{{ skill.image }}.png" alt="{{ skill.alt }}">   
+                    <p>{{ skill.name }}</p>
+                    <img *ngIf="skill.name == 'Growth mindset'" class="overlay" [hidden]="isImageHidden" src="../../../assets/desktop/skill-set/growth_mindset_hover.png" alt="learn React & VUE">
                 </section>
-                    <img *ngIf="isLast" class="overlay" [hidden]="isImageHidden" src="../../../assets/desktop/skill-set/growth_mindset_hover.png" alt="learn React & VUE"> 
             </div>
+            <div class="clear"></div>
         </div>
     </div>
 </div>
