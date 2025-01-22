@@ -53,7 +53,12 @@
                             <div class="df_fd_row_c">
                                 <input type="checkbox" name="checkBoxPrivacyPolicy" class="checkbox" [ngClass]="{'shadow': isHovered}" 
                                 [(ngModel)]="checkBoxPrivacyPolicy" (change)="checkValidyOfCheckBox()">
-                                <h4>{{ 'text-ive-read' | translate }}<a href="javascript:void(0)" (click)="togglePrivacyPolicyComponent(); startsAtTheTop($event)" (mouseenter)="onHover()" (mouseleave)="onLeave()">{{ 'privacy-policy' | translate }}</a>{{ 'text-and-agree' | translate }}</h4>
+                                    <h4>{{ 'text-ive-read' | translate }}
+                                        <a routerLink="/privacy-policy" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="navigateToPrivacyPolicy(); startsAtTheTop($event)" (mouseenter)="onHover()" (mouseleave)="onLeave()">
+                                            {{ 'privacy-policy' | translate }}
+                                        </a>
+                                        {{ 'text-and-agree' | translate }}
+                                    </h4>
                              </div>
                             <div class="required-privacy-policy d-hidden" id="required-privacy-policy">{{ 'text-please-accept' | translate }}</div>
                         </div>

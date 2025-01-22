@@ -17,7 +17,7 @@
                 <div class="project-content">
                     <h1>{{ project.name }}</h1>
                     <h2>{{ project.skills }}</h2>
-                    <p>{{ this.portfolioService.selectedLanguage === 'en' ? project.contentEN : project.contentDE }}</p>
+                    <p>{{ this.portfolioService.selectedLanguage === 'de' ? project.contentDE : project.contentEN }}</p>
                     <div [ngClass]="{'df_jc_fend': i % 2 !== 0}">
                         <div class="btn-container df_jc_sb">
                             <button class="btn-live-test">Live test</button>

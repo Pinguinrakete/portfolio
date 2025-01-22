@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 import {TranslateModule, TranslateService } from "@ngx-translate/core";
 import { PortfolioService } from '../../../services/portfolio.service';
 
@@ -17,8 +18,12 @@ export class HeaderNavbarComponent {
   isMobileViewHeight: boolean = window.innerHeight < 826;
 
 
-  constructor(public portfolioService: PortfolioService, private translate: TranslateService) {
-    this.translate.setDefaultLang('en');
+  constructor(
+    public portfolioService: PortfolioService, 
+    private router: Router,
+    private translate: TranslateService) {
+
+    this.translate.setDefaultLang('de');
   }
 
   /*
@@ -35,8 +40,8 @@ export class HeaderNavbarComponent {
   * typically associated with scrolling to the "Let's Work Together" section of the page.
   */
   scrollToWorkTogether(event: Event) {
+    this.router.navigate(['']); 
     event.preventDefault();
-    this.goToLandingpage();
 
     setTimeout(() => {
       const letsWorkTogether = document.getElementById('lets-work-together');
@@ -49,7 +54,6 @@ export class HeaderNavbarComponent {
       }
     }, 300);
 
-    this.setStatusLegalNoticeAndPrivacyPolicy();
     this.closeMenu();
   }
 
@@ -58,8 +62,8 @@ export class HeaderNavbarComponent {
   * typically associated with scrolling to the "Skill set" section of the page.
   */
   scrollToSkillSet(event: Event) {
+    this.router.navigate(['']); 
     event.preventDefault();
-    this.goToLandingpage();
 
     setTimeout(() => {
       const skillSetSection = document.getElementById('go-to-skill-set');
@@ -74,7 +78,6 @@ export class HeaderNavbarComponent {
       }
     }, 300);
 
-    this.setStatusLegalNoticeAndPrivacyPolicy();
     this.closeMenu();
   }
 
@@ -83,8 +86,8 @@ export class HeaderNavbarComponent {
    * typically associated with scrolling to the "My work" section of the page.
    */
   scrollToMyWork(event: Event) {
+    this.router.navigate(['']); 
     event.preventDefault();
-    this.goToLandingpage();
 
     setTimeout(() => {
       const myWork = document.getElementById('my-work');
@@ -97,7 +100,6 @@ export class HeaderNavbarComponent {
       }
     }, 300);
 
-    this.setStatusLegalNoticeAndPrivacyPolicy();
     this.closeMenu();
   }
 
@@ -106,8 +108,8 @@ export class HeaderNavbarComponent {
    * typically associated with scrolling to the "Contact" section of the page.
   */
   scrollToContact(event: Event) {
+    this.router.navigate(['']); 
     event.preventDefault();
-    this.goToLandingpage();
 
     setTimeout(() => {
       const contactSection = document.getElementById('go-to-contact');
@@ -120,18 +122,7 @@ export class HeaderNavbarComponent {
       }
     }, 300);
 
-    this.setStatusLegalNoticeAndPrivacyPolicy();
     this.closeMenu();
-
-  }
-
-  /*
-   * The method sets the openLegalNotice property of the portfolioService to false.
-   * It also sets the openPrivacyPolicy property of the portfolioService to false.
-   */
-  setStatusLegalNoticeAndPrivacyPolicy() {
-    this.portfolioService.openLegalNotice = false;
-    this.portfolioService.openPrivacyPolicy = false;
   }
 
   /*
@@ -175,26 +166,6 @@ export class HeaderNavbarComponent {
       setTimeout(() => {
         dialog.classList.add('d-none');
       }, 500);
-    }
-  }
-
-  /*
-   * This method handles the closing of the legal notice and privacy policy sections 
-   * when navigating to the landing page. It ensures that any open legal notices or 
-   * privacy policy dialogs are toggled off before transitioning to the landing page.
-   */
-  goToLandingpage() {
-    if (this.portfolioService.openLegalNotice) {
-      this.portfolioService.toggleLegalNotice();
-    }
-
-    if (!this.portfolioService.showLegalNotice && this.portfolioService.showPrivacyPolicy) {
-      this.portfolioService.toggleLegalNotice();
-    }
-
-    if (this.portfolioService.openPrivacyPolicy) {
-      this.portfolioService.togglePrivacyPolicy();
-      this.portfolioService.toggleLegalNotice();
     }
   }
 

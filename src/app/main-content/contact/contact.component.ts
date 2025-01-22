@@ -1,9 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgModel } from '@angular/forms';
 import { ContactFormSucessfullySubmittedComponent } from '../../main-content/contact-form-sucessfully-submitted/contact-form-sucessfully-submitted.component';
-import { PortfolioService } from '../../services/portfolio.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -27,16 +27,18 @@ export class ContactComponent {
   isHovered: boolean = false;
   showSuccessOverlay = false;
 
-  constructor(private portfolioService: PortfolioService) {}
+  /* 
+   * The constructor of the Contact component is used to inject the PortfolioService into the component. 
+   * This allows the component to interact with the service and access its properties and methods.
+   */
+  constructor(private router: Router) {}
 
   /*
-   * This method toggles the visibility of the privacy policy component by updating the relevant properties 
-   * in the portfolioService. It also ensures that the legal notice is closed when the privacy policy is opened.
+   * When the user clicks the "PrivacyPolicy" link, the navigateToPrivacyPolicy() method is invoked, 
+   * and the application navigates to the /privacy-policy route.
    */
-  togglePrivacyPolicyComponent() {
-    this.portfolioService.togglePrivacyPolicy();
-    this.portfolioService.openPrivacyPolicy = true; 
-    this.portfolioService.openLegalNotice = false;
+  navigateToPrivacyPolicy() {
+    this.router.navigate(['/privacy-policy']); 
   }
 
   /*
@@ -75,6 +77,7 @@ export class ContactComponent {
       this.checkValidyOfCheckBox();
     }
   }
+  
   /*
    * This method is responsible for checking the validity of the privacy policy checkbox. It ensures 
    * that the checkbox has been checked, and if not, it reveals a validation message.

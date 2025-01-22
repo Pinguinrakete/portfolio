@@ -90,7 +90,6 @@ export class SkillSetComponent {
     while (currentIndex < this.skills.length) {
       chunked.push(this.skills.slice(currentIndex, currentIndex + chunkSize));
       currentIndex += chunkSize;
-
       chunkSize = chunkSize === 6 ? 5 : 6;
     }
 

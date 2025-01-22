@@ -2,33 +2,27 @@
 
 ########### CONFIG ###############
 
-$recipient = 'enricokirschke@outlook.com';
+$recipient = 'pinguinrakete@gmail.com';
 // $redirect = 'success.html';
 
 ########### CONFIG END ###########
 
+############################ Intruction ##############################   
+#                                                                    #
+#   This script has been created to send an email to the $recipient  #
+#                                                                    #
+#  1) Upload this file to your FTP Server                            #
+#  2) Send a POST rewquest to this file, including                   #
+#     [name] The name of the sender (Absender)                       #
+#     [message] Message that should be send to you                   #
+#                                                                    #
+######################################################################
 
-
-########### Intruction ###########   
-#
-#   This script has been created to send an email to the $recipient
-#   
-#  1) Upload this file to your FTP Server
-#  2) Send a POST rewquest to this file, including
-#     [name] The name of the sender (Absender)
-#     [message] Message that should be send to you
-#
-##################################
-
-
-
-###############################
-#
-#        DON'T CHANGE ANYTHING FROM HERE!
-#
-#        Ab hier nichts mehr ändern!
-#
-###############################
+######################################
+#                                    #
+#  DON'T CHANGE ANYTHING FROM HERE!  #
+#                                    #
+######################################
 
 switch ($_SERVER['REQUEST_METHOD']) {
     case ("OPTIONS"): //Allow preflighting to take place.

@@ -81,7 +81,7 @@
     }
 
     .middle-circle {
-        margin-top: -9rem;
+        margin-top: -8rem;
         margin-left: 58%;
     }
 
@@ -92,6 +92,10 @@
 }
 
 @media only screen and (max-width: 620px) {
+    .contact {
+        padding: 12rem 1.563rem 2.5rem 1.563rem;
+      }
+
     .middle-circle {
         margin-top: -8rem;
         margin-right: 1.5rem;

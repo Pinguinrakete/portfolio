@@ -15,7 +15,7 @@
             </a>
         </div>
     </div>
-    <a href="javascript:void(0)" (click)="toggleLegalNoticeComponent()">
+    <a routerLink="/legal-notice" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="navigateToLegalNotice()">
         <h2>{{ 'legal-notice' | translate }}</h2>
     </a>
     <div class="line">
