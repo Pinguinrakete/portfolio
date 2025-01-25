@@ -27,7 +27,8 @@ export class ProjectsComponent {
         "contentDE": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzern und Kategorien zu.",
         "image": "join-image",
         "alt": "JOIN Image",
-        "link": "https://github.com/Pinguinrakete/join"
+        "link": "https://github.com/Pinguinrakete/join",
+        "link_live_test": "https://join.enrico-kirschke.de/javascript/join/index.html"
     },
     {
         "name": "Pollo Loco",
@@ -36,7 +37,8 @@ export class ProjectsComponent {
         "contentDE": "Jump-and-Run-Spiel, das objektorientiert programmiert wurde. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
         "image": "pollo-loco-image",
         "alt": "Pollo Loco Image",
-        "link": "https://github.com/Pinguinrakete/el_pollo_loco"
+        "link": "https://github.com/Pinguinrakete/el_pollo_loco",
+        "link_live_test": "https://elpolloloco.enrico-kirschke.de/javascript/elpolloloco/index.html"
     },
     {
         "name": "DA Bubble",
@@ -45,7 +47,8 @@ export class ProjectsComponent {
         "contentDE": "Ein sehr einfaches Customer Relationship Management (CRM)-System mit CRUD-Funktionalität.",        
         "image": "simple-crm-image",
         "alt": "DA Bubble Image",
-        "link": "https://chatgpt.com/"
+        "link": "https://chatgpt.com/",
+        "link_live_test": "https://chatgpt.com/"
     },
     {
       "name": "Pokédex",
@@ -53,8 +56,9 @@ export class ProjectsComponent {
       "contentEN": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
       "contentDE": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.",
       "image": "pokedex-image",
-      "alt": " Image",
-      "link": "https://github.com/Pinguinrakete/pokedex"
+      "alt": " Pokedex Image",
+      "link": "https://github.com/Pinguinrakete/pokedex",
+      "link_live_test": "https://pokedex.enrico-kirschke.de/javascript/pokedex/index.html"
     }
   ]
 }

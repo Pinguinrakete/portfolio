@@ -20,7 +20,9 @@
                     <p>{{ this.portfolioService.selectedLanguage === 'de' ? project.contentDE : project.contentEN }}</p>
                     <div [ngClass]="{'df_jc_fend': i % 2 !== 0}">
                         <div class="btn-container df_jc_sb">
-                            <button class="btn-live-test">Live test</button>
+                            <a href="{{ project.link_live_test }}" target="_blank">                            
+                                <button class="btn-live-test">Live test</button>
+                            </a>                                                
                             <a href="{{ project.link }}" target="_blank">
                                 <button class="btn-github">Github</button>
                             </a>

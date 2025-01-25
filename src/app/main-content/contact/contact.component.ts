@@ -154,7 +154,7 @@ export class ContactComponent {
       if (btnChangeColor) {
       btnChangeColor.classList.add('btn-say-hello');
       this.clearInputFields();
-      this.showSuccessOverlay = true;
+      // this.showSuccessOverlay = true;
       }
     }
   }

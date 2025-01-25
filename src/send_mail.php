@@ -25,22 +25,22 @@ $recipient = 'pinguinrakete@gmail.com';
 ######################################
 
 switch ($_SERVER['REQUEST_METHOD']) {
-    case ("OPTIONS"): //Allow preflighting to take place.
+    case ("OPTIONS"):
         header("Access-Control-Allow-Origin: *");
         header("Access-Control-Allow-Methods: POST");
         header("Access-Control-Allow-Headers: content-type");
         exit;
-    case ("POST"): //Send the email;
+    case ("POST"):
         header("Access-Control-Allow-Origin: *");
 
         $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  noreply@developerakademie.com";
+        $headers = "From: info@enrico-kirschke.de";
 
         mail($recipient, $subject, $_POST['message'], $headers);
         header("Location: " . $redirect); 
 
         break;
-    default: //Reject any non POST or OPTIONS requests.
+    default:
         header("Allow: POST", true, 405);
         exit;
 }
