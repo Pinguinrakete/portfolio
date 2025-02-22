@@ -148,10 +148,11 @@ export class ContactComponent {
   }
 
   /*
-   * This method is triggered when the user submits a form. It validates the
-   * input fields and, if all fields are valid, changes the button's color,
-   * clears the input fields, and displays a success overlay.
-   */
+  * This method handles the form submission. It validates the input fields, 
+  * changes the submit button's color, and sends the form data via EmailJS. 
+  * Upon successful submission, it clears the fields and displays a success overlay. 
+  * In case of an error, it logs the failure message.
+  */
   onSubmit(e: Event) {
     this.checkValidyOfInput();
     if (this.nameInput.valid && this.emailInput.valid && this.messageInput.valid && this.checkBoxPrivacyPolicy) {
@@ -167,7 +168,8 @@ export class ContactComponent {
         })
         .then(
           () => {
-            console.log('EMail sending success!');
+            this.clearInputFields();
+            this.showSuccessOverlay = true;
           },
           (error) => {
             console.log('EMail sending failed...', (error as EmailJSResponseStatus).text);
@@ -200,10 +202,16 @@ export class ContactComponent {
    * state. It is typically called after a successful form submission to reset the form for a new entry.
    */
   clearInputFields() {
+    const checkBoxPrivacyPolicy = document.getElementById('required-privacy-policy');
+
     this.contactData.name = '';
     this.contactData.email = '';
     this.contactData.message = '';
     this.checkBoxPrivacyPolicy = false;
+
+    if(checkBoxPrivacyPolicy) {
+    checkBoxPrivacyPolicy.classList.add('d-hidden');
+    }
   }
 
   /*
