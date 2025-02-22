@@ -8,7 +8,7 @@ import { PortfolioService } from '../../services/portfolio.service';
   standalone: true,
   imports: [CommonModule, TranslateModule],
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss', './projects-responsive.component.scss']
+  styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
 

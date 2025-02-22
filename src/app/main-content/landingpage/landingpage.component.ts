@@ -15,7 +15,7 @@ SkillSetComponent
   standalone: true,
   imports: [HeaderNavbarComponent, LetsWorkTogetherComponent, SkillSetComponent, MyWorkComponent, ProjectsComponent, StatementsComponent, ContactComponent, FooterComponent, TranslateModule],
   templateUrl: './landingpage.component.html',
-  styleUrls: ['./landingpage.component.scss','./landingpage-responsive.component.scss']
+  styleUrls: ['./landingpage.component.scss']
 })
 export class LandingpageComponent {
 

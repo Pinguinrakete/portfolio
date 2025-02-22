@@ -6,7 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './lets-work-together.component.html',
-  styleUrls: ['./lets-work-together.component.scss', './lets-work-together-responsive.component.scss']
+  styleUrls: ['./lets-work-together.component.scss']
 })
 export class LetsWorkTogetherComponent {
   

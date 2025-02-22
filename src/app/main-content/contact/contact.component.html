@@ -16,12 +16,12 @@
                 </div>
             </div>
         </div>
-        <form #myForm="ngForm" autocomplete="off" onsubmit="return false;" action="http://enrico-kirschke.de//send_mail.php" method="POST">
+        <form #myForm="ngForm" (ngSubmit)="onSubmit($event)" autocomplete="off">
             <div class="df_ai_fend">
                 <div class="input-contact df_fd_column">
                         <div class="field">
-                        <input type="text" name="inputName" [(ngModel)]="inputName" #nameInput="ngModel" [ngClass]="{ 'label-top': inputName.length > 0 }" (keyup)="checkValidyOfInput()"
-                            pattern="^[a-zA-ZöüäÖÜÄ0-9\s\W]{3,30}$" required/>
+                        <input type="text" name="user_name" [(ngModel)]="contactData.name" #nameInput="ngModel" 
+                        [ngClass]="{ 'label-top': contactData.name.length > 0 }" (keyup)="checkValidyOfInput()" pattern="^[a-zA-ZöüäÖÜÄ0-9\s\W]{3,30}$" required/>
                         <label title="{{ 'text-your-name' | translate }}"></label>
                         <img class="size-status" [ngClass]="{'d-none': nameInput.invalid}" src="../../../assets/desktop/done.png">
                         <img class="size-status d-none" id="error-name-icon" src="../../../assets/desktop/error.png">
@@ -29,8 +29,8 @@
                         <div class="input-bottom-distance"></div>
                     </div>
                     <div class="field">
-                        <input type="email" name="inputEmail" [(ngModel)]="inputEmail" #emailInput="ngModel" [ngClass]="{ 'label-top': inputEmail.length > 0 }" (keyup)="checkValidyOfInput()"
-                            pattern="^[a-zA-Z0-9äöüÄÖÜ]+@[^ ]+\.[a-z]{2,6}$" required/>
+                        <input type="email" name="user_email" [(ngModel)]="contactData.email" #emailInput="ngModel" 
+                        [ngClass]="{ 'label-top': contactData.email.length > 0 }" (keyup)="checkValidyOfInput()" pattern="^[a-zA-Z0-9äöüÄÖÜ]+@[^ ]+\.[a-z]{2,6}$" required/>
                         <label title="{{ 'text-your-email' | translate }}"></label>
                         <img class="size-status" [ngClass]="{'d-none': emailInput.invalid}" src="../../../assets/desktop/done.png">
                         <img class="size-status d-none" id="error-email-icon" src="../../../assets/desktop/error.png">
@@ -38,8 +38,9 @@
                         <div class="input-bottom-distance"></div>
                     </div>
                     <div class="areafield">
-                        <textarea rows="9" name="inputMessage" [(ngModel)]="inputMessage" #messageInput="ngModel" [ngClass]="{ 'label-top': inputMessage.length > 0 }" (keyup)="checkValidyOfInput()"
-                            pattern="^[a-zA-Z0-9!@#$%^&*() _+=\-\.\;\:\u00F6\u00E4\u00FC\u00D6\u00C4\u00DC]{1,1000}$" required></textarea>
+                        <textarea rows="9" name="message" [(ngModel)]="contactData.message" #messageInput="ngModel" 
+                        [ngClass]="{ 'label-top': contactData.message.length > 0 }" (keyup)="checkValidyOfInput()"
+                        pattern="^[a-zA-Z0-9!@#$%^&*() _+=\-\.\;\:\,\?\u00F6\u00E4\u00FC\u00D6\u00C4\u00DC\u00DF']{1,1000}$" required></textarea>
                         <label title="{{ 'text-your-message' | translate }}"></label>
                         <img class="size-status" [ngClass]="{'d-none': messageInput.invalid}" src="../../../assets/desktop/done.png">
                         <img class="size-status d-none" id="error-message-icon" src="../../../assets/desktop/error.png">
@@ -62,15 +63,15 @@
                         </div>
                         <div class="df_jc_c">
                             <button type="submit" id="btn-submit" [ngClass]="{
-                                'btn-say-hello': nameInput.valid && emailInput.valid && messageInput.valid && checkBoxPrivacyPolicy
-                              }" (click)="btnOn();onSubmit()">{{ 'btn-say-hello' | translate }}
+                                'btn-say-hello': nameInput.valid && emailInput.valid && messageInput.valid && checkBoxPrivacyPolicy}" 
+                                (click)="btnOn()">{{ 'btn-say-hello' | translate }}
                             </button>
                         </div>    
                     </div>
                 </div>
             </div>
         </form>
-        <app-contact-form-sucessfully-submitted *ngIf="showSuccessOverlay" (close)="closeOverlay()"></app-contact-form-sucessfully-submitted>
+        <app-contact-form-sucessfully-submitted *ngIf="showSuccessOverlay" (close)="closeSuccessOverlay()"></app-contact-form-sucessfully-submitted>
     </div>
     <img class="size-go-up-btn" (click)="scrollToLandingPage($event)" src="../../../assets/desktop/btn-go-up.png" alt="go up icon">
 </div>
