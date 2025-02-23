@@ -27,8 +27,6 @@
     position: absolute;
     height: 57.313rem;
     width: 47.563rem;
-    // margin-top: 8.75rem;
-    margin-bottom: 0;
     margin-left: 2rem;
     padding: 9.375rem 5rem 0 0;
 }
@@ -325,6 +323,12 @@ h4 {
         top: 19.088rem;
         right: 2.25rem;
         font-size: 2.1rem;
+    }
+}
+
+@media only screen and (min-width: 945px) {
+    .picture-frontend-developer {
+        bottom: 0;
     }
 }
 
