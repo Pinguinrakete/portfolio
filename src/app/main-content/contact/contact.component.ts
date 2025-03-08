@@ -163,8 +163,8 @@ export class ContactComponent {
       e.preventDefault();
 
       emailjs
-        .sendForm('service_', 'template_', e.target as HTMLFormElement, {
-          publicKey: '',
+        .sendForm('service_jshm8yf', 'template_037lkoc', e.target as HTMLFormElement, {
+          publicKey: 'FmSfIESwb1dr654WN',
         })
         .then(
           () => {
