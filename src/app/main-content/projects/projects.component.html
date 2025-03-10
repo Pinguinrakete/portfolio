@@ -1,31 +1,33 @@
-<div class="projects">
-    <div class="circle-container">
-        <div class="circle-one"></div>
-        <div class="circle-two"></div>
-    </div>
-    <div class="circle-three"></div>
-    <div class="circle-four"></div>
-    <div class="circle-five"></div>
-    <div class="project-container" *ngFor="let project of projects; let i = index" [ngClass]="{'reverse-order': i % 2 !== 0, 'last-project': i === projects.length - 1}">
-        <div class="image-container df_jc_c_ai_fe">
-            <div class="image-bg df_jc_c_ai_fe">    
-                <img src="../../../assets/desktop/{{ project.image }}.png" alt="{{ project.alt }}">
-            </div>
+<div class="center-content">
+    <div class="projects">
+        <div class="circle-container">
+            <div class="circle-one"></div>
+            <div class="circle-two"></div>
         </div>
-        <div class="df_ai_fend">
-            <div class="project-description" [ngClass]="{'reverse-description': i % 2 !== 0}">
-                <div class="project-content">
-                    <h1>{{ project.name }}</h1>
-                    <h2>{{ project.skills }}</h2>
-                    <p>{{ this.portfolioService.selectedLanguage === 'de' ? project.contentDE : project.contentEN }}</p>
-                    <div [ngClass]="{'df_jc_fend': i % 2 !== 0}">
-                        <div class="btn-container df_jc_sb">
-                            <a href="{{ project.link_live_test }}" target="_blank">                            
-                                <button class="btn-live-test">Live test</button>
-                            </a>                                                
-                            <a href="{{ project.link }}" target="_blank">
-                                <button class="btn-github">Github</button>
-                            </a>
+        <div class="circle-three"></div>
+        <div class="circle-four"></div>
+        <div class="circle-five"></div>
+        <div class="project-container" *ngFor="let project of projects; let i = index" [ngClass]="{'reverse-order': i % 2 !== 0, 'last-project': i === projects.length - 1}">
+            <div class="image-container df_jc_c_ai_fe">
+                <div class="image-bg df_jc_c_ai_fe">    
+                    <img src="../../../assets/desktop/{{ project.image }}.png" alt="{{ project.alt }}">
+                </div>
+            </div>
+            <div class="df_ai_fend">
+                <div class="project-description" [ngClass]="{'reverse-description': i % 2 !== 0}">
+                    <div class="project-content">
+                        <h1>{{ project.name }}</h1>
+                        <h2>{{ project.skills }}</h2>
+                        <p>{{ this.portfolioService.selectedLanguage === 'de' ? project.contentDE : project.contentEN }}</p>
+                        <div [ngClass]="{'df_jc_fend': i % 2 !== 0}">
+                            <div class="btn-container df_jc_sb">
+                                <a href="{{ project.link_live_test }}" target="_blank">                            
+                                    <button class="btn-live-test">Live test</button>
+                                </a>                                                
+                                <a href="{{ project.link }}" target="_blank">
+                                    <button class="btn-github">Github</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

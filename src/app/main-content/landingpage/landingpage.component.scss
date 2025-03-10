@@ -1,9 +1,17 @@
+.center-content {
+    background-image: linear-gradient(to bottom, #ffffff, #eaf0ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
 .landingpage {
     width: 100%;
+    max-width: 1440px;
     height: 100vh;
+    max-height: 1440px;
     position: relative;
-    overflow: hidden; 
-    background-image: linear-gradient(to bottom, #ffffff, #eaf0ff);
 }
 
 .pos-navbar {
@@ -72,25 +80,25 @@ h4 {
     width: 5.938rem;
     font-size: 1.438rem;
     font-weight: 500;
-    top: 41rem;
-    margin-left: 68.5%;
+    bottom: 16.5rem;
+    right: 12rem;
 }
 
 .line {
     position: absolute;
-    height: 20.625rem;
+    height: 16rem;
     width: 0.125rem;
-    top: 43.375rem;
-    margin-left: 71.8%;
+    bottom: 0;
+    right: 15rem;
     background-color: #5988FF;
 }
 
 .navbar-social-icon {
     position: absolute;
-    top: 42.5rem;
     left: 90.3%;
     height: 10.625rem;
     width: 2.5rem;
+    bottom: 5rem;
 }
 
 .icon-container {
@@ -116,6 +124,15 @@ h4 {
 .size-social-icon {
     height: 1.875rem;
     width: 1.875rem;
+}
+
+@media only screen and (min-height: 1081px) {
+    .picture-frontend-developer {
+        height: 68.75rem;
+        width: 57rem;
+        margin-left: 0;
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 1420px) {
@@ -154,30 +171,7 @@ h4 {
     }
 }
 
-@media only screen and (max-width: 1375px) {
-    .line {
-        margin-left: 60.813rem;
-    }
-
-    h4 {
-        margin-left: 58.219rem;
-    }
-}
-
 @media only screen and (max-width: 1320px) {
-    .picture-frontend-developer {
-        width: 100%;
-        padding: 9.375rem 39rem 0 0;
-    }
-
-    h4 {
-        margin-left: 71.5%;
-    }
-    
-    .line {
-        margin-left: 74.6%;
-    }
-    
     .circle-landingpage {
         margin-left: calc(-12.5rem + (100vw - 82.5rem));
     }
@@ -186,7 +180,8 @@ h4 {
 @media only screen and (max-width: 1160px) {
     .picture-frontend-developer {
         padding: 9.375rem 0 0 0;
-        width: 32.5rem;
+        width: 42rem;
+        margin-left: 0;
     }
 
     .circle-landingpage {
@@ -209,6 +204,14 @@ h4 {
         right: 3.7rem;
         font-size: 3.1rem;
     }
+
+    .line {
+        right: 12rem;
+    }
+    
+    h4 {
+        right: 9rem;
+    }
 }
 
 @media only screen and (max-width: 1135px) {
@@ -227,10 +230,6 @@ h4 {
         top: 17.588rem;
         right: 3rem;
         font-size: 2.9rem;
-    }
-
-    .line {
-        margin-left: 75%;
     }
 }
 
@@ -251,10 +250,6 @@ h4 {
         top: 17.588rem;
         right: 1.5rem;
         font-size: 2.9rem;
-    }
-
-    .line {
-        margin-left: 75%;
     }
 }
 
@@ -297,12 +292,16 @@ h4 {
 }
 
 @media only screen and (max-width: 985px) {
-    .picture-frontend-developer {
-        margin-left: 0;
-    }
-
     .circle-landingpage {
         margin-left: -24.5rem;
+    }
+
+    .line {
+        right: 9rem;
+    }
+    
+    h4 {
+        right: 6rem;
     }
 }
 
@@ -479,7 +478,7 @@ h4 {
 
 @media only screen and (max-width: 540px) {
     .picture-frontend-developer {
-        width: 100%;
+        overflow-y: hidden;
     }
 
     h1 {
@@ -499,10 +498,6 @@ h4 {
 }
 
 @media only screen and (max-width: 500px) {
-    .picture-frontend-developer {
-        width: 100%;
-    }
-
     h1 {
         font-size: 4.5rem;
     }
@@ -518,7 +513,7 @@ h4 {
 
 @media only screen and (max-width: 460px) {
     .picture-frontend-developer {
-        width: 420px;
+        overflow-y: hidden;
     }
 
     h1 {
@@ -537,7 +532,8 @@ h4 {
 
 @media only screen and (max-width: 420px) {
     .picture-frontend-developer {
-        width: 100%;
+        width: 580px;
+        overflow-y: hidden;
     }
 
     h1 {
@@ -624,26 +620,12 @@ h4 {
     }
 
     .picture-frontend-developer {
-        height: 65rem;
         margin-top: 15rem;
+        bottom: 0;
     }
 }
 
-@media (orientation: portrait) and (max-height: 1140px) {
-    .picture-frontend-developer {
-        height: 56rem;
-        margin-top: 16rem;
-    }
-}
-
-@media (orientation: portrait) and (max-height: 1024px) {
-    .picture-frontend-developer {
-        height: 50rem;
-        margin-top: 14rem;
-    }
-}
-
-@media (orientation: portrait) and (max-height: 900px) {
+ @media (orientation: portrait) and (max-height: 900px) {
     .picture-frontend-developer {
         height: 44rem;
         margin-top: 12rem;

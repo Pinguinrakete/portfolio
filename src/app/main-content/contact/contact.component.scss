@@ -1,6 +1,14 @@
-.contact {
-    padding: 8.75rem 6.75rem 4rem 5.688rem;
+.center-content {
     background-image: linear-gradient(to right, #FFFFFF, #EAF0FF);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    width: 100%;
+    max-width: 1440px;
+    padding: 8.75rem 6.75rem 4rem 5.688rem;
     position: relative;
 }
 
@@ -252,14 +260,14 @@ button {
     background-position: center;
 
     &:hover {
-        animation: move-btn-say-hello 0.4s forwards;
+        animation: move-btn-say-hello 0.35s forwards;
     }
 
     @keyframes move-btn-say-hello {
-        0% {bottom: 0px; background-image: url('./../../../assets/desktop/btn-animation-one.png'); color: white; height: 3.625rem; width: 11.313rem; border: 0;}
-        35% {bottom: 0px; background-image: url('./../../../assets/desktop/btn-animation-one.png'); color: white; height: 3.625rem; width: 11.313rem; border: 0;}
-        75% {bottom: 0px; background-image: url('./../../../assets/desktop/btn-animation-two.png'); color: white; height: 3.625rem; width: 11.313rem; border: 0;}
-        100% {bottom: 0px; background-image: url('./../../../assets/desktop/btn-animation-three.png'); color: white; height: 4rem; width: 13rem; border: 0;}
+        0% {bottom: 0px; background-image: url('./../../../assets/desktop/btn-animation-one.png'); color: white; height: 3.625rem; width: 11.313rem; border: 0; background-size: 120% 120%; border-radius: 0.625rem; }
+        35% {bottom: 0px; background-image: url('./../../../assets/desktop/btn-animation-one.png'); color: white; height: 3.625rem; width: 11.313rem; border: 0; background-size: 120% 120%; border-radius: 0.625rem; }
+        75% {bottom: 0px; background-image: url('./../../../assets/desktop/btn-animation-two.png'); color: white; height: 3.625rem; width: 11.313rem; border: 0; background-size: 120% 120%; border-radius: 0.625rem; }
+        100% {bottom: 0px; background-image: url('./../../../assets/desktop/btn-animation-three.png'); color: white; height: 4rem; width: 13rem; border: 0; background-size: 120% 120%; border-radius: 0.625rem; }
     }
 }
 

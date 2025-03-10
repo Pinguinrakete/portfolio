@@ -1,24 +1,26 @@
-<div class="footer">
-    <div class="df_col_ai_c">
-    <div class="df_row_sb_c">    
-        <img class="size-logo-icon" (click)="scrollToLandingPage($event)" src="../../../assets/desktop/logo-icon-footer.png" alt="logo footer">
-        <h1>© Enrico Kirschke 2025</h1>
-        <div class="social-container-footer">
-            <a href="https://github.com/Pinguinrakete/" target="_blank">        
-                <img class="social-icon-size" src="../../../assets/desktop/github-icon-footer.png" alt="Github icon">
-            </a>
-            <a (click)="scrollToContact($event)">
-                <img class="social-icon-size" contactSection src="../../../assets/desktop/email-icon-footer.png" alt="Email icon">
-            </a>    
-            <a href="https://de.linkedin.com/" target="_blank">            
-                <img class="social-icon-size" src="../../../assets/desktop/linkedin-icon-footer.png" alt="linkedin icon">
-            </a>
+<div class="center-content">
+    <div class="footer">
+        <div class="df_col_ai_c">
+        <div class="df_row_sb_c">    
+            <img class="size-logo-icon" (click)="scrollToLandingPage($event)" src="../../../assets/desktop/logo-icon-footer.png" alt="logo footer">
+            <h1>© Enrico Kirschke 2025</h1>
+            <div class="social-container-footer">
+                <a href="https://github.com/Pinguinrakete/" target="_blank">        
+                    <img class="social-icon-size" src="../../../assets/desktop/github-icon-footer.png" alt="Github icon">
+                </a>
+                <a (click)="scrollToContact($event)">
+                    <img class="social-icon-size" contactSection src="../../../assets/desktop/email-icon-footer.png" alt="Email icon">
+                </a>    
+                <a href="https://de.linkedin.com/" target="_blank">            
+                    <img class="social-icon-size" src="../../../assets/desktop/linkedin-icon-footer.png" alt="linkedin icon">
+                </a>
+            </div>
         </div>
-    </div>
-    <a routerLink="/legal-notice" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="navigateToLegalNotice()">
-        <h2>{{ 'legal-notice' | translate }}</h2>
-    </a>
-    <div class="line">
-        <div class="legal-notice-underline"></div>
+        <a routerLink="/legal-notice" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="navigateToLegalNotice()">
+            <h2>{{ 'legal-notice' | translate }}</h2>
+        </a>
+        <div class="line">
+            <div class="legal-notice-underline"></div>
+        </div>
     </div>
 </div>

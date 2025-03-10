@@ -1,5 +1,5 @@
 import { Component, ViewChild, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgModel } from '@angular/forms';
@@ -11,7 +11,7 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, ContactFormSucessfullySubmittedComponent, TranslateModule],
+  imports: [CommonModule, FormsModule, ContactFormSucessfullySubmittedComponent, RouterModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })

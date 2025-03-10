@@ -1,6 +1,14 @@
-.footer {
-    position: relative;
+.center-content {
     background-image: linear-gradient(135deg, #5988FF 6%, #5988FF 52%, #0043F0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
     padding: 7.563rem 6.25rem 4rem 6.25rem;
 }
 

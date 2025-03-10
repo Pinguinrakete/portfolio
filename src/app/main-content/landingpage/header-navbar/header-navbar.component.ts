@@ -1,7 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-import {TranslateModule, TranslateService } from "@ngx-translate/core";
+import { TranslateModule, TranslateService } from "@ngx-translate/core";
 import { PortfolioService } from '../../../services/portfolio.service';
 
 @Component({
@@ -69,11 +69,9 @@ export class HeaderNavbarComponent {
       const skillSetSection = document.getElementById('go-to-skill-set');
 
       if (skillSetSection) {
-        const scrollBlock = this.isMobileViewHeight ? 'start' : 'center';
-
-        skillSetSection.scrollIntoView({
+          skillSetSection.scrollIntoView({
           behavior: 'smooth',
-          block: scrollBlock
+          block: 'start'
         });
       }
     }, 300);
@@ -91,11 +89,11 @@ export class HeaderNavbarComponent {
 
     setTimeout(() => {
       const myWork = document.getElementById('my-work');
-      
+
       if (myWork) {
-        window.scrollTo({
-          top: myWork.getBoundingClientRect().top + window.scrollY - 100, 
-          behavior: 'smooth'
+          myWork.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
       }
     }, 300);
@@ -117,7 +115,7 @@ export class HeaderNavbarComponent {
       if (contactSection) {
         contactSection.scrollIntoView({
           behavior: 'smooth',
-          block: 'center' 
+          block: 'start' 
         });
       }
     }, 300);
