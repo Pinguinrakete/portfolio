@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-// import { PortfolioService } from '../../services/portfolio.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({

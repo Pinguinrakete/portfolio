@@ -37,6 +37,7 @@
     width: 47.563rem;
     margin-left: 2rem;
     padding: 9.375rem 5rem 0 0;
+    bottom: 0;
 }
 
 h1, h2 {
@@ -325,11 +326,11 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 945px) {
-    .picture-frontend-developer {
-        bottom: 0;
-    }
-}
+// @media only screen and (min-width: 945px) {
+//     .picture-frontend-developer {
+//         bottom: 0;
+//     }
+// }
 
 @media only screen and (max-width: 910px) {
     h4, .navbar-social-icon, .line {
@@ -368,8 +369,7 @@ h4 {
     }
 
     .picture-frontend-developer {
-        margin-top: 14.5rem;
-        padding: 9.375rem 0 0 0;
+        height: 43rem;
     }
 }
 
@@ -610,7 +610,7 @@ h4 {
 
 @media (orientation: portrait) and (max-height: 1370px) {
     .landingpage {
-        max-height: 1024px;
+        max-height: 1370px;
     }
 }
 
@@ -621,27 +621,58 @@ h4 {
 
     .picture-frontend-developer {
         margin-top: 15rem;
+        height: 56rem;
         bottom: 0;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 1050px) {
+    .picture-frontend-developer {
+        height: 50rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 965px) {
+    .picture-frontend-developer {
+        height: 45rem;
     }
 }
 
  @media (orientation: portrait) and (max-height: 900px) {
     .picture-frontend-developer {
-        height: 44rem;
+        height: 43rem;
         margin-top: 12rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 860px) {
+    .picture-frontend-developer {
+        height: 41.5rem;
     }
 }
 
 @media (orientation: portrait) and (max-height: 825px) {
     .picture-frontend-developer {
-        height: 42rem;
+        height: 40rem;
         margin-top: 11rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 805px) {
+    .picture-frontend-developer {
+        height: 38rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 760px) {
+    .picture-frontend-developer {
+        height: 35rem;
     }
 }
 
 @media (orientation: portrait) and (max-height: 740px) {
     .picture-frontend-developer {
-        height: 36rem;
+        height: 34rem;
     }
 
     .landingpage {
@@ -649,9 +680,21 @@ h4 {
     }
 }
 
-@media (orientation: portrait) and (max-height: 640px) {
+@media (orientation: portrait) and (max-height: 725px) {
     .picture-frontend-developer {
-        margin-top: 7rem;
+        height: 33rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 700px) {
+    .picture-frontend-developer {
+        height: 30rem;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 645x) {
+    .picture-frontend-developer {
+        margin-top: 4rem;
     }
 
     h1 {
@@ -687,8 +730,7 @@ h4 {
 
 @media (orientation: portrait) and (max-height: 535px) {
     .picture-frontend-developer {
-        height: 28rem;
-        margin-top: 7rem;
+        display: none;
     }
     
     h1 {
