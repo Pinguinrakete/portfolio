@@ -31,7 +31,7 @@
                         </div>
                         <div class="field">
                             <input type="email" name="user_email" [(ngModel)]="contactData.email" #emailInput="ngModel" 
-                            [ngClass]="{ 'label-top': contactData.email.length > 0 }" (keyup)="checkValidyOfInput()" pattern="^[a-zA-Z0-9äöüÄÖÜ]+@[^ ]+\.[a-z]{2,6}$" required/>
+                            [ngClass]="{ 'label-top': contactData.email.length > 0 }" (keyup)="checkValidyOfInput()" pattern="^[a-zA-Z0-9äöüÄÖÜ]+@[^ ]+\.[a-z]{2,30}$" required/>
                             <label title="{{ 'text-your-email' | translate }}"></label>
                             <img class="size-status" [ngClass]="{'d-none': emailInput.invalid}" src="../../../assets/desktop/done.png">
                             <img class="size-status d-none" id="error-email-icon" src="../../../assets/desktop/error.png">

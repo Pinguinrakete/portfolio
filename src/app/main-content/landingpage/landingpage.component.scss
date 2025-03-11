@@ -335,6 +335,7 @@ h4 {
 @media(max-height: 1260px) and (max-width: 910px) {
     .picture-frontend-developer {
         height: 46rem;
+        width: 40rem;
     }
 }
 
@@ -373,10 +374,18 @@ h4 {
         left: 2.5rem;
         font-size: 3.1rem;
     }
+}
 
-    // .picture-frontend-developer {
-    //     height: 43rem;
-    // }
+@media only screen and (max-width: 860px) {
+    .picture-frontend-developer {
+        width: 40rem;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .picture-frontend-developer {
+        width: 40rem;
+    }
 }
 
 @media only screen and (max-width: 735px) {
@@ -485,6 +494,7 @@ h4 {
 @media only screen and (max-width: 540px) {
     .picture-frontend-developer {
         overflow-y: hidden;
+        width: 33rem;
     }
 
     h1 {
@@ -520,6 +530,7 @@ h4 {
 @media only screen and (max-width: 460px) {
     .picture-frontend-developer {
         overflow-y: hidden;
+        width: 40rem;
     }
 
     h1 {
@@ -590,7 +601,7 @@ h4 {
     }
 
     .picture-frontend-developer {
-        width: 25rem;
+        width: 30rem;
     }
 
 }
@@ -685,6 +696,7 @@ h4 {
 @media (orientation: portrait) and (max-height: 725px) {
     .picture-frontend-developer {
         height: 33rem;
+        width: 29rem;
     }
 }
 
@@ -745,5 +757,15 @@ h4 {
 
     h3 {
         top: 8rem;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 805px) {
+    h4 {
+        bottom: 12.5rem;
+    }
+    
+    .line {
+        height: 12rem;
     }
 }
